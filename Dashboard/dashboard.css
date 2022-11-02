@@ -1,0 +1,92 @@
+body{
+  
+    margin:0;
+    padding:0;
+    background-size: cover;
+
+ }
+
+ .dashboard_wrapper{
+    height:100vh;
+    width:100vw;
+    display:flex;
+  
+
+ }
+ 
+ .sidenav{
+    height:100%;
+border:1px solid pink;
+    width:250px;
+ }
+ .main{
+    height:100%;
+ 
+    width:100%;
+    overflow: scroll;
+
+padding-left: 30px;
+
+
+ }
+
+ .main_top{
+    height:200px;
+  padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  gap:30px;
+    justify-content: center;
+
+ }
+ .main_middle{
+    height:300px;
+ 
+ padding-right:15px;
+ padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    gap:15px;
+      justify-content: center;
+ }
+
+ .main_chart{
+    height:250px;
+    border :1px solid green;
+ }
+ .main_bottom{
+    height:350px;
+padding-right:10px;
+    display: flex;
+    flex-direction: column;
+  gap:15px;
+    justify-content: center;
+ }
+ .main_table{
+border:1px solid blue;
+height:250px;
+ }
+ .main_table table{
+   width:100%;
+ }
+ .title{
+    font-size:25px;
+ 
+ }
+ .main_top_content{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:70px;
+    width:80%;
+ }
+ .card{
+    height:80px;
+    width:250px;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    padding-left:10px;
+ }
