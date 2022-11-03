@@ -2,6 +2,7 @@
 <html>
     <head>
   <?php include '../Components/header.php'; ?>
+  <script type="text/javascript" src="./order.js"></script>
     <link rel="stylesheet" href="order.css">
     </head>
     <body>
@@ -15,10 +16,10 @@
     <div class="main_content">
         <div class="main_top">
       <span>Orders</span>
-      <div><button><i class="fa fa-search fa-rotate-90" ></i></button><input type="text" name="text"/></div>
+      <div><button onclick=" PopulateTable()"><i class="fa fa-search fa-rotate-90" ></i></button><input type="text" name="search" id="search" /></div>
         </div>
         <div class="main_table">
-<table>
+<table id="order_table">
     <thead>
         <tr>
             <th>
@@ -37,25 +38,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Item 1</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Item 2</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Item 3</td>
-            <td></td>
-            <td></td>
-        </tr>
+        
     </tbody>
 </table>
+
         </div>
-    
+        <div class="table_pagination">
+   <button onclick="PopulateTable(page-1)"><i class="fa fa-caret-left"></i></button> 
+   <span id="page_number"> </span>
+   <button onclick="PopulateTable(page+1)"><i class='fa fa-caret-right'></i></button>
+</div>
     </div>
 
 </div>
