@@ -49,32 +49,59 @@ padding-left: 30px;
       flex-direction: column;
     gap:15px;
       justify-content: center;
+      
  }
 
  .main_chart{
     height:250px;
-    border :1px solid green;
+    overflow: scroll; 
+   
+ }
+ .chart{
+   width:1000px;
+   height:95%;
+   border :1px solid green;
  }
  .main_bottom{
    
 padding-right:10px;
-padding-bottom: 10px;;
+padding-bottom: 20px;;
     display: flex;
     flex-direction: column;
   gap:15px;
     justify-content: center;
+  
  }
  .main_table{
-border:1px solid blue;
 
-
+   height: 400px;
+overflow: scroll; 
  }
  
  .main_table table{
-   width:100%;
+   width:1000px;
+ 
+ 
+   overflow: scroll; 
  }
+ th{
+   text-align: left;
+   padding:10px;
+   border-bottom: 1px solid black;
+   position: sticky;
+   top:0;
+  background:white;
+}
+
+
+td{
+   font-size:18px;
+   padding:5px;
+   color:grey;
+}
  .title{
     font-size:25px;
+    color:rgb(144, 142, 142);
  
  }
  .main_top_content{
@@ -87,7 +114,7 @@ border:1px solid blue;
  .card{
     height:80px;
     width:250px;
-    border:1px solid red;
+    border:1px solid rgb(213, 211, 211);
     display: flex;
     flex-direction: column;
     justify-content: center;
