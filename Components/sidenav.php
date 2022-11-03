@@ -7,9 +7,9 @@ echo '
 
 </div>
 <div class="sidenav_links">
-    <a>Dashboard</a>
-    <a>Orders</a>
-    <a>Logout</a>
+    <a href="/Dashboard/dashboard.php">Dashboard</a>
+    <a href="/Order/order.php">Orders</a>
+    <a href="#">Logout</a>
 </div>
 
 '
