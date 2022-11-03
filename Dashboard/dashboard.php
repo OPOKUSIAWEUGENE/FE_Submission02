@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <?php include '../Components/header.php'; ?>
         <link rel="stylesheet" href="dashboard.css">
-<title>CANDY SHOP</title>
+
     </head>
     <body>
 <div class="dashboard_wrapper">
 <div class="sidenav">
-dsfsdf
+<?php include '../Components/sidenav.php'; ?>
 
 </div>
 <div class="main">

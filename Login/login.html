@@ -2,6 +2,8 @@
 <html>
     <head>
      <meta name="viewport" content="width=device-width initial-scale=1.0">
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script type="text/javascript" src="./login.js"></script>
         <link rel="stylesheet" href="login.css">
 <title>CANDY SHOP</title>
     </head>
@@ -18,10 +20,10 @@ Freddy's Arsenal Halloween Candy Shop
             </p>
           
         </div>
-   <form class="login_form">
+   <form class="login_form" action="'https://freddy.codesubmit.io/login'" onsubmit="login()">
 <div class="form_input_group">
-<input type="text" name="username" placeholder="username"/>
-<input type="password" name="password" placeholder="***************">
+<input type="text" name="username" id="username" placeholder="username" required/>
+<input type="password" name="password" id="password" placeholder="***************" required>
 </div>
 <input type="submit" value="Login"/>
 

@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" href="order.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>CANDY SHOP</title>
+  <?php include '../Components/header.php'; ?>
+    <link rel="stylesheet" href="order.css">
     </head>
     <body>
 <div class="order_wrapper">
 <div class="sidenav">
-<div class="sidenav_logo">
-    <img alt="logo"  src="/Resources/Freddys_Logo.svg"/>
-
-</div>
-<div class="sidenav_links">
-    <a>Dashboard</a>
-    <a>Orders</a>
-    <a>Logout</a>
-</div>
-
+<?php include '../Components/sidenav.php';?>
 </div>
 <div class="main">
    

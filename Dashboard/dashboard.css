@@ -22,7 +22,7 @@ border:1px solid pink;
  .main{
     height:100%;
  
-    width:100%;
+    width:80%;
     overflow: scroll;
 
 padding-left: 30px;
@@ -31,8 +31,9 @@ padding-left: 30px;
  }
 
  .main_top{
-    height:200px;
-  padding-bottom: 10px;
+    height:auto;
+    padding-top:30px;
+  padding-bottom: 30px;
     display: flex;
     flex-direction: column;
   gap:30px;
@@ -40,10 +41,10 @@ padding-left: 30px;
 
  }
  .main_middle{
-    height:300px;
+    height:auto;
  
  padding-right:15px;
- padding-bottom: 20px;
+ padding-bottom: 30px;
       display: flex;
       flex-direction: column;
     gap:15px;
@@ -55,8 +56,9 @@ padding-left: 30px;
     border :1px solid green;
  }
  .main_bottom{
-    height:350px;
+   
 padding-right:10px;
+padding-bottom: 10px;;
     display: flex;
     flex-direction: column;
   gap:15px;
@@ -64,8 +66,10 @@ padding-right:10px;
  }
  .main_table{
 border:1px solid blue;
-height:250px;
+
+
  }
+ 
  .main_table table{
    width:100%;
  }
@@ -90,3 +94,61 @@ height:250px;
     gap:10px;
     padding-left:10px;
  }
+
+ .sidenav{
+   display:flex;
+   flex-direction: column;
+   gap:10px;
+}
+.sidenav_logo{
+   height:180px;
+  
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.sidenav_logo img{
+   height:70%;
+}
+.sidenav_links{
+   display:flex;
+   flex-direction: column;
+   justify-items: center;
+
+   width:100%;
+ 
+ 
+}
+.sidenav_links a{
+   height:40px;
+   font-size:20px;
+   padding-left:40px;
+   display: flex;
+   align-items: center;
+}
+
+
+@media only screen and (max-width: 780px) {    
+.sidenav{
+   display:none;
+
+}
+
+.main_top_content{
+   flex-direction: column;
+   justify-content: center;
+   gap:20px;
+   width:100%;
+ 
+}
+.card{
+   width:90%;
+   text-align: center;
+}
+.main{
+   width:100%;
+
+   padding-right:20px;
+  
+}
+}
