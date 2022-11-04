@@ -9,7 +9,8 @@ echo '
 <div class="sidenav_links">
     <a href="/Dashboard/dashboard.php">Dashboard</a>
     <a href="/Order/order.php">Orders</a>
-    <a href="#">Logout</a>
+    <a href="/Login/login.html">Logout</a>
+
 </div>
 
 '

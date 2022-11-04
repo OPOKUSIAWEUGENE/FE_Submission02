@@ -102,6 +102,10 @@ td{
  .title{
     font-size:25px;
     color:rgb(144, 142, 142);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:85%;
  
  }
  .main_top_content{
@@ -180,4 +184,45 @@ td{
    padding-right:20px;
   
 }
+}
+
+
+.toggle {
+   position : relative ;
+   display : inline-block;
+   width : 50px;
+   height : 20px;
+   border-radius: 30px;
+   border: 2px solid rgb(187, 186, 186);
+}
+      
+/* After slide changes */
+.toggle:after {
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: rgb(203, 201, 201);
+   top: 0px;
+   left: 0px;
+   transition:  all 0.5s;
+}
+      
+/* Toggle text */
+p {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+      
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+   left : 30px;
+}
+      
+
+      
+/* Checkbox vanished */
+.checkbox {
+   display : none;
 }

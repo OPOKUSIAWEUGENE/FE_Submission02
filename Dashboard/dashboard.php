@@ -2,9 +2,11 @@
 <html>
     <head>
   <?php include '../Components/header.php'; ?>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" ></script>
+ 
         <link rel="stylesheet" href="dashboard.css">
         <script type="text/javascript" src="./dashboard.js"></script>
-    </head>
+      </head>
     <body>
 <div class="dashboard_wrapper">
 <div class="sidenav">
@@ -46,11 +48,21 @@
 </div>
 <div class="main_middle">
     <div class="title">
-        Revenue last 7 days
+      <span>  Revenue last 7 days</span> 
+      <span> 
+        
+        <input type="checkbox" id="switch" value="week" onchange="loadGraph()"
+                    class="checkbox" />
+        <label for="switch" class="toggle"> 
+        </label>
+    </span>
     </div>
    <div class="main_chart">
     <div class="chart">
-
+    <div  style="width:100%; height:240px;">
+                     
+                     <canvas style=" width:100%; height:240px;" id="myChart"></canvas>
+                   </div>
     </div>
    </div>  
     </div>
@@ -91,7 +103,8 @@
 </html>
 
 <script>
-
+   //constants and variables for chart
+ 
 
 
 </script>
