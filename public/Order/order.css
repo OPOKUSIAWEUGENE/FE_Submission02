@@ -1,0 +1,170 @@
+body{
+  
+    margin:0;
+    padding:0;
+    background-size: cover;
+
+ }
+
+ .order_wrapper{
+    height:100vh;
+    width:100vw;
+    display:flex;
+  
+
+ }
+ 
+ .sidenav{
+    height:100%;
+border:1px solid rgb(195, 195, 195);
+    width:200px;
+ }
+ .main{
+    height:100%;
+ 
+    width:70%;
+    overflow: scroll;
+
+padding-left: 30px;
+
+
+ }
+
+ 
+
+
+ .main_content{
+  
+    width:100%;
+padding-right:10px;
+    display: flex;
+    flex-direction: column;
+  gap:15px;
+    justify-content: center;
+  
+ }
+ .main_table{
+border:1px solid rgb(213, 213, 214);
+height:600px;
+
+overflow: scroll;
+ }
+ 
+ .main_table table{
+   width:1000px;
+ }
+ th{
+   text-align: left;
+   padding:10px;
+   border-bottom: 1px solid black;
+   position: sticky;
+   top:0;
+  background:white;
+}
+
+
+td{
+   font-size:18px;
+   padding:5px;
+   color:grey;
+}
+ 
+ .main_top{
+    font-size:25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ height:90px;
+ color:rgb(144, 142, 142);
+ }
+ .main_top input{
+outline:none;
+border:1px solid rgb(212, 211, 211);
+height:25px;
+width:200px;
+ }
+ .main_top button{
+    border:none;
+    background:none;
+    cursor: pointer;
+ }
+
+
+
+ .sidenav{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+ }
+ .sidenav_logo{
+    height:180px;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .sidenav_logo img{
+    height:70%;
+ }
+ .sidenav_links{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+
+    width:100%;
+  
+  
+ }
+ .sidenav_links a{
+    height:40px;
+    font-size:20px;
+    padding-left:40px;
+    display: flex;
+    align-items: center;
+  text-decoration: none;
+  color:grey;
+
+
+ }
+ a:hover{
+    background:rgb(220, 219, 219);
+ }
+.main_top .fa-search
+{
+    font-size:25px;
+    color:rgb(85, 84, 84);;
+}
+
+.table_pagination button{
+   width:10px;
+   height:5px;
+   border:none;
+   background:white;
+   font-size: 20px;
+   color:grey;
+   cursor: pointer;
+   text-align: center;
+}
+.table_pagination button:hover{
+   opacity: 0.5;
+}
+
+@media only screen and (max-width: 780px) {    
+    .sidenav{
+       display:none;
+    
+    }
+    
+    .main_top{
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        padding-top:20px;
+    }
+    .main{
+       width:100%;
+    
+       padding-right:20px;
+      
+    }
+    }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script  script type="text/javascript" src="/Login/login.js"></script>
+        <link rel="stylesheet" href="/Login/login.css">
+        <title>CANDY SHOP</title>
+    </head>
+
+    <body>
+        <div class="login_wrapper">
+            <div class="login_container">
+                <div class="login_header">
+                <div class="login_header_logo">
+                <img alt="logo" class="login_logo" src="/Resources/Freddys_Logo.svg"/>
+                </div>
+                <p class="login_header_text">Freddy's Arsenal Halloween Candy Shop</p>
+          
+                </div>
+
+<!-- login form -->
+            <form class="login_form" action="'https://freddy.codesubmit.io/login'" onsubmit="login()">
+            <div class="form_input_group">
+            <input type="text" name="username" id="username" placeholder="username" required/>
+            <input type="password" name="password" id="password" placeholder="***************" required>
+            </div>
+            <input type="submit" value="Login"/>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
